@@ -1,5 +1,4 @@
-## Variables de entorno (.env)
-
+## Conexión a BD PostgreSQL (.env)
 DB_DATABASE='node_restobarproject'
 DB_USERNAME='postgres'
 DB_PASSWORD='Lisasamm18.'
@@ -7,17 +6,52 @@ DB_HOST='localhost'
 DB_PORT=5432
 DB_DRIVER='postgres'
 
-TZ='America/Lima'
-PORT=3000
-NODE_ENV=development
+## Crud Completo (Usuarios, Roles) (.env)
 
-SECRET_KEY='tecsup'
-JWT_ACCESS_EXPIRE='30m'
-JWT_REFRESH_EXPIRE='6h'
+Usuario : 
+Listar Usuarios
+Crear
+Modificar
+Eliminar
 
-MAIL_SERVER='smtp.gmail.com'
-MAIL_PORT='587'
-MAIL_USE_TLS= True
-MAIL_USERNAME='anitacec.fernandez@gmail.com'
-MAIL_PASSWORD='fafkbvlxwjoxhhqm'
+Roles : 
+Listar Usuarios
+Crear
+Modificar
+Elimina
 
+## Controladores  (.env)
+
+-auth
+-roles
+-usarios
+
+## Rutas Protegidas JWT (.env)
+
+Productos , Delivery , Contactanos, Administrador por RoleId
+
+## Modelos Relacionados (.env)
+
+Usuarios relacionados con Roles
+static associate(models) {
+    this.belongsTo(models.roles, {
+      foreignKey: "role_id",
+      targetKey: "id",
+    });
+  }
+
+## Despliegue (.env)
+
+Render: Backend y Base de Datos
+
+## Backend (.env)
+
+NodeJS(Express)
+
+## Documentacion (.env)
+
+Postman
+
+## Repositorio Documentado con README.md (.env)
+
+Github
