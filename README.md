@@ -1,10 +1,10 @@
 ## Conexión a BD PostgreSQL (.env)
-DB_DATABASE='node_restobarproject'
-DB_USERNAME='postgres'
-DB_PASSWORD='Lisasamm18.'
-DB_HOST='localhost'
+DB_DATABASE='t'
+DB_USERNAME=''
+DB_PASSWORD=''
+DB_HOST=''
 DB_PORT=5432
-DB_DRIVER='postgres'
+DB_DRIVER=''
 
 ## Crud Completo (Usuarios, Roles) (.env)
 
